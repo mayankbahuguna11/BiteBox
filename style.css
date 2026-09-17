@@ -14,11 +14,6 @@ header{
     padding: 0px 30px 0px 30px;
 }
 
-h1{
-color: white;
-}
-
-
 nav a {
     color: white;
     font-size: 20px;
@@ -32,7 +27,7 @@ nav {
 }
 
  a:hover {
-             color: red;
+    color: red;
     }
 
 .hero{
@@ -204,4 +199,267 @@ social-icons a:hover{
 .icon-box p:hover{
     color: red;
     font-size: 20px;
+}
+
+header{
+    position: sticky;
+}
+
+/* Design Card */
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px black;
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.card button:hover{
+    background:darkred;
+}
+
+/* Design card ends here */
+/* Menu page ends here */
+
+/* Start of bitedeals page */
+
+.deals-page{
+    padding: 40px;
+    background: #f8f8f8;
+}
+
+.deal-hero{
+    background: linear-gradient(135deg, black, grey);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.deal-hero h1{
+    font-size: 40px;
+}
+
+.deal-hero p{
+    font-size: 18px;
+}
+
+.section-title{
+    margin: 30px 0px 20px;
+    font-size: 28px;
+    color: #000;
+}
+
+/* Today's combo offer */
+.combo-section{
+    padding: 0px;
+    background: #fff;
+}
+
+.combo-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.combo-card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+      transition:0.3s ;/* ;CSS transitions allows you to change property values smoothly, over a given duration */
+}
+
+.combo-card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.combo-card h4{
+    margin: 10px 0px;
+}
+.combo-card h4 span{
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+.combo-card button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.combo-card button:hover{
+    background: #cc0000;
+}
+
+.combo-card:hover{
+    transform: translateY(-8px);
+}
+
+/* Day-wise offer design */
+.deals-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.deal-card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px black;
+}
+
+.deal-card h3{
+    margin-bottom: 10px;
+}
+
+.deal-card span{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.deal-card:hover{
+    transform: translateY(-8px);
+}
+
+.red{
+     border-top: 5px solid red;   
+    }
+
+.yellow{
+     border-top: 5px solid yellow;
+    }
+.green{ 
+    border-top: 5px solid green ;
+}
+.blue{ 
+    border-top: 5px soid blue;
+}
+
+/* Cart page design */
+/* Style the table */
+table{
+    width: 70%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+thead{
+    background: red;
+    color: white;
+}
+
+th, td{
+    padding: 15px;
+    text-align: center;
+}
+
+tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.remove{
+    background: red;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove:hover{
+    background: darkred;
+}
+
+.grand-total td{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.grand-total button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grand-total button:hover{
+    background: darkred;
+}
+
+.qty-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.qty-box button{
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: red;
+    color: white;
+    font: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.qty-box button:hover{
+    background: darkred;
 }

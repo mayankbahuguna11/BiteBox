@@ -30,10 +30,22 @@
 
         <form>
             <input id="email" type="email" placeholder="Email" required>
-            <input id="password" type="password" placeholder="Password" required>
+
+            <div style="position: relative;">
+
+                <input id="password" type="password" placeholder="Password" required>
+
+                <span onclick="togglePassword()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                    
+                    <i class="fa-solid fa-eye"></i>
+
+                </span>
+            </div>
             <button type="submit" onclick="login()">Login</button>
         </form>
 
+        <p id="error" style="color: red;"></p>
+        
         <p><a href="signup.html">Forgot Password</a></p>
         <p>Don't have an account?<a href="signup.html">Signup</a></p>
 
